@@ -9,8 +9,8 @@ setInterval(()=>{
     let date = new Date()
     years.innerHTML=date.getFullYear()
     months.innerHTML=date.getMonth()+1
-    days.innerHTML=date.getDate()
-    hours.innerHTML=date.getHours()
-    minutes.innerHTML=date.getMinutes()
-    seconds.innerHTML=date.getSeconds()
+    days.innerHTML=date.getDate()<10?`0${date.getDate()}`:date.getDate();
+    hours.innerHTML=date.getHours()<10?`0${date.getHours()}`:date.getHours();
+    minutes.innerHTML=date.getMinutes()<10?`0${date.getMinutes()}`:date.getMinutes();
+    seconds.innerHTML=date.getSeconds()<10?`0${date.getSeconds()}`:date.getSeconds();
 },1000)
